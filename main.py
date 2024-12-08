@@ -1,8 +1,8 @@
-from src.masks import get_mask_card_number
 from src.masks import get_mask_account
+from src.masks import get_mask_card_number
+from src.widget import mask_account_card
+from src.widget import get_date
 
-user_card_number = input("Введите номер карты")
-print(get_mask_card_number(user_card_number))
-
-user_number_account = input("Введите номер счета")
-print(get_mask_account("user_number_account"))
+user_accounting = input("Введите номер банковской карты или счета")
+print(mask_account_card('Visa Classic 6831982476737658'))
+print(get_date('2024-03-11T02:26:18.671407'))
